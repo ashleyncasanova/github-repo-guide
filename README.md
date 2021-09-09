@@ -6,29 +6,29 @@
 >Note: Execute the following commands in the terminal
 
 ```
-cd ~/projects
+    cd ~/projects
 
-mkdir <project-name>
+    mkdir <project-name>
 
-cd <project-name>
+    cd <project-name>
 ```
 
 ## 2. Initialize repository
 
 ```
-git init
+    git init
 ```
 
 > Option: Rename branch to `main`
 
 ```
-git branch -m main
+    git branch -m main
 ```
 
 ## 3. Open VS Code
 
 ```
-code .
+    code .
 ```
 
 ## 4. Add initial commit
@@ -41,9 +41,9 @@ code .
 1. Enter the following commands: 
 
 ```
-git add .
+    git add .
 
-git commit -m "Initial commit"
+    git commit -m "Initial commit"
 ```
 
 ## 5. Push to GitHub
@@ -54,8 +54,8 @@ git commit -m "Initial commit"
 1. Copy/paste the last two commands from the box titled "... or create a new repository on the command line"
 
 ```
-git remote add origin https://github.com/ashleyncasanova/practice-github.git
-git push -u origin main
+    git remote add origin https://github.com/ashleyncasanova/practice-github.git
+    git push -u origin main
 ```
 
 ## 6. Make changes to repository
@@ -63,7 +63,7 @@ git push -u origin main
 1. Create feature branch
 
 ```
-git checkout -b <branch-name>
+    git checkout -b <branch-name>
 ```
 
 2. Make changes to file
@@ -71,15 +71,15 @@ git checkout -b <branch-name>
 3. Commit changes
 
 ```
-git add .
+    git add .
 
-git commit -m "Describe what you've changed"
+    git commit -m "Describe what you've changed"
 ```
 
 4. Push branch to GitHub
 
 ```
-git push origin <branch-name>
+    git push origin <branch-name>
 ```
 
 ## 7. Merge Pull Request
@@ -89,12 +89,12 @@ git push origin <branch-name>
 
 ## 8. Done
 
-1. navigate back to VS code and enter the following:
+1. Navigate back to VS code and enter the following:
 
 ```
-git checkout main
+    git checkout main
 
-git branch -D <branch-name>
+    git branch -D <branch-name>
 
-git pull origin main
+    git pull origin main
 ```
