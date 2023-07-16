@@ -104,40 +104,45 @@
 **Step 1: Rename Repository on Github**
 
 1. On GitHub.com, navigate to the main page of the repository.
-2. Under your repository name, click the settings tab.
+2. Under your repository name, click the `settings` tab.
 3. In the repository name field, type the new name of your repository.
-4. Click rename.
+4. Click `rename`.
 
 **Step 2: Reset URL on Local Machine**
 
+1. Navigate back to the main page of your repository.
+1. Copy the `NEW-URL` using the drop down menu of the `Code` tab. It should follow the syntax: `https://github.com/user-name/new-name.git`.
 1. In the terminal, `cd` into the directory you are renaming.
-2. Update any existing local clones to point to the new repository url using the command:
+1. Update any existing local clones to point to the new repository url using the command:
 
 `git remote set-url origin NEW-URL`
 
->You can find the `NEW-URL` using the drop down menu of the `Code` tab. It should follow the syntax: `https://github.com/user-name/new-name.git`
-
 **Step 3: Rename folder on your Computer**
 
-1. In the terminal `cd` out of directory you are changing and run the following command: 
+1. In the terminal `cd` into the parent directory of the directory you are changing (using `cd ..`) and run the following command: 
 
 `mv old_name new_name`
 
-**Step 4: Check**
 
-To check the remote url:
+**Step 4: Check that our url was sucessfully changed**
 
-`git config —get remote.origin.url`
+1. First we need to `cd` back into our new directory.
 
-To see all of your remote urls: 
+2. Next we can one one or more of the following tests...
+
+* To check the remote url:
+
+`git config --get remote.origin.url`
+
+* To see all of your remote urls: 
 
 `git remote -v`
 
-For more information about the remote repository:
+* For more information about the remote repository:
 
 `git remote show origin`
 
 
-To get more details about a particular repository:
+* To get more details about a particular repository:
 
 `git remote show [remote-name] command`
