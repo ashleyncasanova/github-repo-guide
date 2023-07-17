@@ -141,8 +141,3 @@
 * For more information about the remote repository:
 
 `git remote show origin`
-
-
-* To get more details about a particular repository:
-
-`git remote show [remote-name] command`
